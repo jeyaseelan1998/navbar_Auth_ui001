@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Navbar and Login Form</title>
+</head>
+<body>
+    <header class="nav-bar">
+        <h1 class="logo">இளஞ்சிட்டுகள்</h1>
+        <nav class="nav-items-container">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <button class="login-button-popup">Login</button>
+        </nav>
+    </header>
+    <div class="popup">
+        <div class="wrapper">
+            <span class="icon-close">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <div class="form-container login">
+                <h1 class="form-heading">Login</h1>
+                <form>
+                    <div class="input-container">
+                        <p class="form-icon">
+                            <ion-icon name="person"></ion-icon>
+                        </p>
+                        <input type="text" required/>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-container">
+                        <span class="form-icon">
+                            <ion-icon name="lock"></ion-icon>
+                        </span>
+                        <input type="password" required/>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"/>Remember me</label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="form-btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Register</a> </p>
+                    </div>
+                </form>
+            </div>
+    
+            <div class="form-container register">
+                <h1 class="form-heading">Register</h1>
+                <form>
+                    <div class="input-container">
+                        <p class="form-icon">
+                            <ion-icon name="person"></ion-icon>
+                        </p>
+                        <input type="text" required/>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-container">
+                        <p class="form-icon">
+                            <ion-icon name="mail"></ion-icon>
+                        </p>
+                        <input type="text" required/>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-container">
+                        <span class="form-icon">
+                            <ion-icon name="lock"></ion-icon>
+                        </span>
+                        <input type="password" required/>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"/>I agree to the terms & conditions</label>
+                    </div>
+                    <button type="submit" class="form-btn">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a> </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <q class="random-quote"></q>
+</body>
+<script src="script.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</html>
